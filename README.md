@@ -24,6 +24,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
+## Planned UI Library
+Nebular
+https://akveo.github.io/nebular/
+
 ## Main Features
 1. User registration and login
 2. User prayer list creation
