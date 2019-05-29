@@ -12,4 +12,10 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  model = {
+    left: true,
+    middle: false,
+    right: false
+  };
+
 }

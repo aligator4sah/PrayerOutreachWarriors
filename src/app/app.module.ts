@@ -6,20 +6,22 @@ import { LoginComponent } from './login/login.component';
 
 /** Import animations */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 /** Import Alyle UI */
-import {
-  LyThemeModule,
-  LY_THEME
-} from '@alyle/ui';
+// import {
+//   LyThemeModule,
+//   LY_THEME
+// } from '@alyle/ui';
 
-/** Import the component modules */
-import { LyButtonModule } from '@alyle/ui/button';
-import { LyToolbarModule } from '@alyle/ui/toolbar';
-import { LyResizingCroppingImageModule } from '@alyle/ui/resizing-cropping-images';
+// /** Import the component modules */
+// import { LyButtonModule } from '@alyle/ui/button';
+// import { LyToolbarModule } from '@alyle/ui/toolbar';
+// import { LyResizingCroppingImageModule } from '@alyle/ui/resizing-cropping-images';
 
-/** Import themes */
-import { MinimaLight, MinimaDark } from '@alyle/ui/themes/minima';
+// /** Import themes */
+// import { MinimaLight, MinimaDark } from '@alyle/ui/themes/minima';
 
 @NgModule({
   declarations: [
@@ -30,17 +32,10 @@ import { MinimaLight, MinimaDark } from '@alyle/ui/themes/minima';
     BrowserModule,
     // Animations
     BrowserAnimationsModule,
-    // Set main theme
-    LyThemeModule.setTheme('minima-light'),
-    // Add components
-    LyButtonModule,
-    LyToolbarModule,
-    LyResizingCroppingImageModule
+    NgbModule,
+    FormsModule
   ],
-  providers: [
-    { provide: LY_THEME, useClass: MinimaLight, multi: true }, // name: `minima-light`
-    { provide: LY_THEME, useClass: MinimaDark, multi: true } // name: `minima-dark`
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
