@@ -1,6 +1,6 @@
-# PrayerOutreachWarriors
+# PrayerOutReachWarriors
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
 ## Development server
 
@@ -24,9 +24,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
 ## Planned UI Library
-Nebular
-https://akveo.github.io/nebular/
+Angular Material
 
 ## Main Features
 1. User registration and login
@@ -38,6 +39,3 @@ https://akveo.github.io/nebular/
 7. Streach: push notification to remind user pray each day.
 8. Reward/Encuragement for keeping praying or requirements have completed. 
 9. create event and location for reach out or internal prayer
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# PrayerOutreachWarriors
