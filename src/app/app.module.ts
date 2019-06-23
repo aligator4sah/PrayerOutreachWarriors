@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { LeftSideBarComponent } from './left-side-bar/left-side-bar.component';
+import { SharedModule } from './shared/shared.module';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { LeftSideBarComponent } from './left-side-bar/left-side-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
