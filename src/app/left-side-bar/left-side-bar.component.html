@@ -1,3 +1,65 @@
-<p>
-  left-side-bar works!
-</p>
+<mat-card class="left-side-bar">
+  <mat-card-header>
+    <mat-card-title>Menu</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="side-bar-content">
+      <mat-icon style="height:100px; width:100px; padding:10px;" svgIcon="weather"></mat-icon>
+      <p>Weather: Rainy</p>
+    </div>
+    <mat-accordion class="headers-align">
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Prayer Requests
+            </mat-panel-title>
+            <mat-panel-description>
+              <mat-icon>drafts</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <mat-list>
+            <mat-list-item>Prayer List</mat-list-item>
+            <mat-list-item>Create Prayer</mat-list-item>
+            <mat-list-item>Group Progress</mat-list-item>
+          </mat-list>
+        </mat-expansion-panel>
+      
+        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Reachout Schedule
+            </mat-panel-title>
+            <mat-panel-description>
+              <mat-icon>location_city</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <mat-list>
+            <mat-list-item>Calendar</mat-list-item>
+            <mat-list-item>Create Event</mat-list-item>
+            <mat-list-item>Find Event</mat-list-item>
+          </mat-list>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Internal Prayer
+              </mat-panel-title>
+              <mat-panel-description>
+                <mat-icon>group</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+        
+            <mat-list>
+              <mat-list-item>Calendar</mat-list-item>
+              <mat-list-item>Create Event</mat-list-item>
+              <mat-list-item>Find Event</mat-list-item>
+            </mat-list>
+          </mat-expansion-panel>
+  </mat-accordion>      
+  </mat-card-content>
+
+</mat-card>

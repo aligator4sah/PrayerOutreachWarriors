@@ -1,0 +1,39 @@
+.left-side-bar {
+    width: 25%;
+    margin: 10px;
+    padding-top: 20px;
+    background-color: aliceblue;
+}
+
+.side-bar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-align {
+    background-color: #FFFFFF;
+    justify-content: space-between;
+}
+
+mat-expansion-panel-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+mat-panel-title {
+    font-weight: bold;
+}
+
+mat-panel-description {
+    display: flex;
+    justify-content: flex-end;
+}
