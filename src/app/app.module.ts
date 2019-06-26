@@ -8,12 +8,14 @@ import { HomeComponent } from './home/home.component';
 import { LeftSideBarComponent } from './left-side-bar/left-side-bar.component';
 import { SharedModule } from './shared/shared.module';
 import { MatCardModule } from '@angular/material/card';
+import { PrayListComponent } from './work-content/pray-list/pray-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LeftSideBarComponent
+    LeftSideBarComponent,
+    PrayListComponent
   ],
   imports: [
     BrowserModule,
