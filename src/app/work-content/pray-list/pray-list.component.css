@@ -1,0 +1,10 @@
+mat-grid-tile {
+    background: lightblue;
+  }
+
+mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
