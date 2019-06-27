@@ -18,3 +18,24 @@
 .right-logo {
     padding-right:3%;
 }
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-side {
+    width: 25%;
+}
+
+.right-side {
+    width: 70%;
+}
+
+.content-card {
+    width: 96%;
+    margin: 10px 5px;
+    padding: 20px 10px 10px 10px;
+    background-color: aliceblue;
+}
