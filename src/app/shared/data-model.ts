@@ -9,6 +9,7 @@ export class PrayRequest {
     createdTime: Date;
     completedTime: Date;
     comment: String;
+    private: boolean;
 }
 
 export class User {
