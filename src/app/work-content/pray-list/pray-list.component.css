@@ -1,5 +1,5 @@
 mat-grid-tile {
-    background: lightblue;
+    /**background: lightblue; */
   }
 
 mat-card-title {
@@ -8,3 +8,32 @@ mat-card-title {
     padding-left: 15px;
     padding-bottom: 10px;
 }
+
+.category-card-1 {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    background-color: #A9B9D9;
+}
+
+.category-card-2 {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    background-color: #400101;
+}
+
+.category-card-3 {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    background-color: #ADBF24;
+}
+
+.category-card-4 {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    background-color: #637AA6;
+}
+
