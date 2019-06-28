@@ -9,13 +9,15 @@ import { LeftSideBarComponent } from './left-side-bar/left-side-bar.component';
 import { SharedModule } from './shared/shared.module';
 import { MatCardModule } from '@angular/material/card';
 import { PrayListComponent } from './work-content/pray-list/pray-list.component';
+import { CreatePrayRequestComponent } from './work-content/create-pray-request/create-pray-request.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LeftSideBarComponent,
-    PrayListComponent
+    PrayListComponent,
+    CreatePrayRequestComponent
   ],
   imports: [
     BrowserModule,
