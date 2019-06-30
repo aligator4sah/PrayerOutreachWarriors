@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-pray-request',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatePrayRequestComponent implements OnInit {
 
-  constructor() { }
+  createRequestForm: FormGroup;
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.createRequestForm = this.fb.group({
+      title: ['', Validators.required]
+    });
   }
 
 }
