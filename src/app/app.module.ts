@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { MatCardModule } from '@angular/material/card';
 import { PrayListComponent } from './work-content/pray-list/pray-list.component';
 import { CreatePrayRequestComponent } from './work-content/create-pray-request/create-pray-request.component';
+import { OutScheduleComponent } from './work-content/out-schedule/out-schedule.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CreatePrayRequestComponent } from './work-content/create-pray-request/c
     HomeComponent,
     LeftSideBarComponent,
     PrayListComponent,
-    CreatePrayRequestComponent
+    CreatePrayRequestComponent,
+    OutScheduleComponent
   ],
   imports: [
     BrowserModule,
