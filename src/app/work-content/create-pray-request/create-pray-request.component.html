@@ -1,4 +1,9 @@
 <p>
   create-pray-request works!
 </p>
-<form></form>
+<form [formGroup]="createRequestForm">
+    <mat-form-field>
+        <input matInput placeholder="Pray Request Title" formControlName="title">
+    </mat-form-field>
+
+</form>

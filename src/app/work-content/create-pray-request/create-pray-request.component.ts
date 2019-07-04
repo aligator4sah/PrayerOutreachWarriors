@@ -14,7 +14,11 @@ export class CreatePrayRequestComponent implements OnInit {
 
   ngOnInit() {
     this.createRequestForm = this.fb.group({
-      title: ['', Validators.required]
+      title: ['', Validators.required],
+      secret: ['', Validators.required],
+      description: [''],
+      category: [''],
+      createdFor: ['']
     });
   }
 

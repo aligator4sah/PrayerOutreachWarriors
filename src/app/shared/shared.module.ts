@@ -7,6 +7,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -18,7 +22,11 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatExpansionModule,
     MatListModule,
     MatGridListModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserModule
   ],
   exports: [
     MatCardModule,
@@ -27,7 +35,11 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatExpansionModule,
     MatListModule,
     MatGridListModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserModule
   ]
 })
 export class SharedModule { }
