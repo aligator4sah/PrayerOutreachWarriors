@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -26,7 +27,8 @@ import { FormsModule }   from '@angular/forms';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    MatSelectModule
   ],
   exports: [
     MatCardModule,
@@ -39,7 +41,8 @@ import { FormsModule }   from '@angular/forms';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    MatSelectModule
   ]
 })
 export class SharedModule { }
