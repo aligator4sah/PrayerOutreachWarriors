@@ -1,5 +1,20 @@
+mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
 .create-form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+mat-form-field {
+    padding: 3px 15px;
+}
+
+mat-label {
+    padding-right: 15px;
 }

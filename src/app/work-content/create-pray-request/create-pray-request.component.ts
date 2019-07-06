@@ -7,7 +7,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./create-pray-request.component.css']
 })
 export class CreatePrayRequestComponent implements OnInit {
-
+  
+  categories = CATEGORY;
   createRequestForm: FormGroup;
 
   constructor(private fb: FormBuilder) { }

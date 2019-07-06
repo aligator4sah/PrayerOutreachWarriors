@@ -1,18 +1,23 @@
-<p>
-  create-pray-request works!
-</p>
+<mat-card-title>
+    Create Pray
+</mat-card-title>
 <form [formGroup]="createRequestForm" class="create-form">
-    <mat-form-field>
+    <mat-form-field style="width: 60%">
         <input matInput placeholder="Pray Request Title" formControlName="title">
     </mat-form-field>
     <mat-form-field>
-        <input matInput placeholder="Pray Request Title" formControlName="description">
+        <input matInput placeholder="Pray Request Description" formControlName="description">
     </mat-form-field>
+    <div style="padding: 3px 15px">
+        <mat-label>Private</mat-label>
+        <mat-slide-toggle formControlName="secret" color="primary"></mat-slide-toggle>
+    </div>
     <mat-form-field>
-        <mat-label>Private / Public</mat-label>
-        <mat-select>
-          <mat-option>true</mat-option>
-          <mat-option>false</mat-option>
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="category">
+          <mat-option *ngFor="let item of categories">
+            {{item.name}}
+          </mat-option>
         </mat-select>
       </mat-form-field>
 </form>
