@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { CATEGORY } from '../../shared/mock-data';
 
 @Component({
   selector: 'app-create-pray-request',

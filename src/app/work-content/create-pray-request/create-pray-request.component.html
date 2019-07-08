@@ -1,18 +1,18 @@
 <mat-card-title>
-    Create Pray
+    Create Pray Request
 </mat-card-title>
 <form [formGroup]="createRequestForm" class="create-form">
     <mat-form-field style="width: 60%">
         <input matInput placeholder="Pray Request Title" formControlName="title">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field style="width: 80%">
         <input matInput placeholder="Pray Request Description" formControlName="description">
     </mat-form-field>
     <div style="padding: 3px 15px">
         <mat-label>Private</mat-label>
         <mat-slide-toggle formControlName="secret" color="primary"></mat-slide-toggle>
     </div>
-    <mat-form-field>
+    <mat-form-field style="width: 80%">
         <mat-label>Category</mat-label>
         <mat-select formControlName="category">
           <mat-option *ngFor="let item of categories">
@@ -20,4 +20,10 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
+      <mat-form-field style="width: 80%">
+        <input matInput placeholder="Created for (First Name, Last Name)" formControlName="createdFor">
+    </mat-form-field>
 </form>
+<div class="button-group">
+
+</div>
