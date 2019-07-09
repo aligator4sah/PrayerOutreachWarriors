@@ -13,8 +13,25 @@ mat-card-title {
 
 mat-form-field {
     padding: 3px 15px;
+    width: 36%;
 }
 
 mat-label {
     padding-right: 15px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.mat-raised-button {
+    margin-right: 15px;
+    width: 100px;
 }

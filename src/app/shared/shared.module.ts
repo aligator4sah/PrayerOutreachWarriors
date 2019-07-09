@@ -13,6 +13,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [],
@@ -30,7 +32,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     FormsModule,
     BrowserModule,
     MatSelectModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatButtonToggleModule,
+    MatButtonModule
   ],
   exports: [
     MatCardModule,
@@ -45,7 +49,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     FormsModule,
     BrowserModule,
     MatSelectModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatButtonToggleModule,
+    MatButtonModule
   ]
 })
 export class SharedModule { }
