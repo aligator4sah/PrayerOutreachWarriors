@@ -11,6 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { PrayListComponent } from './work-content/pray-list/pray-list.component';
 import { CreatePrayRequestComponent } from './work-content/create-pray-request/create-pray-request.component';
 import { OutScheduleComponent } from './work-content/out-schedule/out-schedule.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,11 @@ import { OutScheduleComponent } from './work-content/out-schedule/out-schedule.c
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
