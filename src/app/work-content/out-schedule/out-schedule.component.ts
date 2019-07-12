@@ -1,52 +1,42 @@
-import { Component, OnInit } from '@angular/core';
-import {
-  ChangeDetectionStrategy,
-  ViewChild,
-  TemplateRef
-} from '@angular/core';
-import {
-  startOfDay,
-  endOfDay,
-  subDays,
-  addDays,
-  endOfMonth,
-  isSameDay,
-  isSameMonth,
-  addHours
-} from 'date-fns';
-import { Subject } from 'rxjs';
-import {
-  CalendarEvent,
-  CalendarEventAction,
-  CalendarEventTimesChangedEvent,
-  CalendarView
-} from 'angular-calendar';
+import { Component, ViewChild, AfterViewInit, Renderer2, OnInit } from '@angular/core';
+import { Moment } from 'moment';
+import { MatCalendar } from '@angular/material';
 
-const colors: any = {
-  red: {
-    primary: '#ad2121',
-    secondary: '#FAE3E3'
-  },
-  blue: {
-    primary: '#1e90ff',
-    secondary: '#D1E8FF'
-  },
-  yellow: {
-    primary: '#e3bc08',
-    secondary: '#FDF1BA'
-  }
-};
 
 @Component({
   selector: 'app-out-schedule',
   templateUrl: './out-schedule.component.html',
   styleUrls: ['./out-schedule.component.css']
 })
-export class OutScheduleComponent implements OnInit {
+export class OutScheduleComponent implements AfterViewInit {
 
-  constructor() { }
+  @ViewChild('calendar', null) calendar: MatCalendar<Moment>;
 
-  ngOnInit() {
+  selectedDate: Moment;
+
+  constructor(private renderer: Renderer2) {
+  }
+
+  monthSelected(date) {
+    alert(`Selected: ${date}`);
+  }
+
+  onDateChanged(date) {
+    alert(`Selected: ${date}`);
+  }
+
+  ngAfterViewInit() {
+    // Find all arrow buttons in the calendar
+    let buttons = document.querySelectorAll('mat-calendar mat-calendar-header button');
+
+    if (buttons) {
+      // Listen for click event
+      Array.from(buttons).forEach(button => {
+        this.renderer.listen(button, "click", () => {
+          alert('Arrow button clicked');
+        });
+      })
+    }
   }
 
 }

@@ -15,6 +15,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import {MatNativeDateModule} from '@angular/material';
 
 @NgModule({
   declarations: [],
@@ -34,7 +37,10 @@ import {MatButtonModule} from '@angular/material/button';
     MatSelectModule,
     MatSlideToggleModule,
     MatButtonToggleModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
+    MatNativeDateModule
   ],
   exports: [
     MatCardModule,
@@ -51,7 +57,10 @@ import {MatButtonModule} from '@angular/material/button';
     MatSelectModule,
     MatSlideToggleModule,
     MatButtonToggleModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
+    MatNativeDateModule
   ]
 })
 export class SharedModule { }
