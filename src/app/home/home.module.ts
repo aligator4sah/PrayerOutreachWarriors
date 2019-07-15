@@ -1,17 +1,38 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router';
+import { PrayListModule } from '../work-content/pray-list/pray-list.module';
+import { HomeComponent } from './home.component';
+import { LeftSideBarComponent } from '../left-side-bar/left-side-bar.component'
+import { SharedModule } from '../shared/shared.module'
+
+const routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    children: [
+      {path: '', redirectTo: 'list', pathMatch: 'full'},
+      {path: 'list', loadChildren: '../work-content/pray-list/pray-list.module#PrayListModule'}
+    ]
+  }
+];
 
 @NgModule({
     imports: [
       CommonModule,
-      RouterModule.forChild([
-        // {path: '', component: HomeComponent}
-      ])
+      SharedModule,
+      RouterModule.forChild(routes),
     ],
-    declarations: [],
+    declarations: [
+      HomeComponent, 
+      LeftSideBarComponent,
+    ],
     exports: [
-        CommonModule
+        CommonModule,
+        SharedModule,
+        SharedModule,
+        HomeComponent,
+        LeftSideBarComponent
     ]
 })
 

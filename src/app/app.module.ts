@@ -13,13 +13,11 @@ import { CreatePrayRequestComponent } from './work-content/create-pray-request/c
 import { OutScheduleComponent } from './work-content/out-schedule/out-schedule.component';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LeftSideBarComponent,
-    PrayListComponent,
     CreatePrayRequestComponent,
     OutScheduleComponent
   ],
@@ -28,6 +26,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    HomeModule,
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory
