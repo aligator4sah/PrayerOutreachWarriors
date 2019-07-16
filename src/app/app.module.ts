@@ -18,8 +18,8 @@ import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [
     AppComponent,
-    CreatePrayRequestComponent,
-    OutScheduleComponent
+    // CreatePrayRequestComponent,
+    // OutScheduleComponent
   ],
   imports: [
     BrowserModule,
