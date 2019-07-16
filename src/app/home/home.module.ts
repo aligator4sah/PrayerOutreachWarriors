@@ -11,7 +11,7 @@ const routes = [
     path: '',
     component: HomeComponent,
     children: [
-      {path: '', redirectTo: 'list', pathMatch: 'full'},
+      {path: '', redirectTo: '/list', pathMatch: 'full'},
       {path: 'list', loadChildren: '../work-content/pray-list/pray-list.module#PrayListModule'}
     ]
   }
@@ -29,7 +29,6 @@ const routes = [
     ],
     exports: [
         CommonModule,
-        SharedModule,
         SharedModule,
         HomeComponent,
         LeftSideBarComponent
