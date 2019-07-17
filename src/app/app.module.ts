@@ -14,10 +14,12 @@ import { OutScheduleComponent } from './work-content/out-schedule/out-schedule.c
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { HomeModule } from './home/home.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
     // CreatePrayRequestComponent,
     // OutScheduleComponent
   ],
