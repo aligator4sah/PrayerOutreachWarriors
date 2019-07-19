@@ -5,4 +5,26 @@
 
 .login-section {
     width: 40%;
+    padding-top: 10%;
+    padding-left: 100px;
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 30px 10px 60px 0px;
+}
+
+mat-form-field {
+    width: 300px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-item {
+    margin-right: 10px;
 }
