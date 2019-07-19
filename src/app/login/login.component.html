@@ -1,6 +1,20 @@
 <div class="login-background">
   <div class="login-section">
     <h2>Prayer Outreach Warrior </h2>
-
+    <form [formGroup] = loginForm>
+      <mat-form-field>
+        <input matInput formControlName="username" placeholder="Username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="password" placeholder="Password">
+      </mat-form-field>
+    </form>
+    <a routerLink="/home">
+      <button mat-raised-button>Submit</button>
+    </a>
+    <button mat-raised-button color="primary">Register</button>
+  </div>
+  <div class="right-side-pic">
+    <!-- <img src="../../assets/img/giphy.gif" alt="background" width="100%" height="100%"> -->
   </div>
 </div>

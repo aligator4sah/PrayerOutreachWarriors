@@ -1,0 +1,8 @@
+.login-background {
+    display: flex;
+    flex-direction: row;
+}
+
+.login-section {
+    width: 40%;
+}
