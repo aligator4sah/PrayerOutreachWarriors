@@ -18,6 +18,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import {MatNativeDateModule} from '@angular/material';
+import {MatTreeModule} from '@angular/material/tree';
 
 @NgModule({
   declarations: [],
@@ -39,7 +40,8 @@ import {MatNativeDateModule} from '@angular/material';
     MatButtonModule,
     MatDatepickerModule,
     MatMomentDateModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTreeModule
   ],
   exports: [
     MatCardModule,
@@ -58,7 +60,8 @@ import {MatNativeDateModule} from '@angular/material';
     MatButtonModule,
     MatDatepickerModule,
     MatMomentDateModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTreeModule
   ]
 })
 export class SharedModule { }
