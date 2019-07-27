@@ -19,11 +19,11 @@
             </mat-panel-description>
           </mat-expansion-panel-header>
       
-          <mat-list>
-            <mat-list-item>Prayer List</mat-list-item>
-            <mat-list-item>Create Prayer</mat-list-item>
-            <mat-list-item>Group Progress</mat-list-item>
-          </mat-list>
+          <mat-nav-list>
+            <a mat-list-item [routerLink]="['/list']"> Prayer List </a>
+            <a mat-list-item [routerLink]="['/create-pray']"> Create Prayer </a>
+            <a mat-list-item [routerLink]="['/list']"> Group Progress </a>
+          </mat-nav-list>
         </mat-expansion-panel>
       
         <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
@@ -36,11 +36,11 @@
             </mat-panel-description>
           </mat-expansion-panel-header>
       
-          <mat-list>
-            <mat-list-item>Calendar</mat-list-item>
+          <mat-nav-list>
+            <a mat-list-item [routerLink]="['/out-schedule']"> Calendar </a>
             <mat-list-item>Create Event</mat-list-item>
             <mat-list-item>Find Event</mat-list-item>
-          </mat-list>
+          </mat-nav-list>
         </mat-expansion-panel>
 
         <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
