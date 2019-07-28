@@ -18,11 +18,11 @@ export class OutScheduleComponent implements AfterViewInit {
   }
 
   monthSelected(date) {
-    alert(`Selected: ${date}`);
+    // alert(`Selected: ${date}`);
   }
 
   onDateChanged(date) {
-    alert(`Selected: ${date}`);
+    // alert(`Selected: ${date}`);
   }
 
   ngAfterViewInit() {
@@ -33,7 +33,7 @@ export class OutScheduleComponent implements AfterViewInit {
       // Listen for click event
       Array.from(buttons).forEach(button => {
         this.renderer.listen(button, "click", () => {
-          alert('Arrow button clicked');
+          // alert('Arrow button clicked');
         });
       })
     }
