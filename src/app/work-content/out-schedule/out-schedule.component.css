@@ -1,4 +1,24 @@
+.out-schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 98%;
+}
 
- .calendar-wrapper{
-    width: 300px;
+.calendar-wrapper{
+    width: 36%;
+    padding: 20px 30px;
+    margin-left: 10px;
+}
+
+.event-list {
+    flex-direction: column;
+    padding: 25px 10px;
+    margin-left: 20px;
+    width: 45%;
+}
+
+.expansion-list {
+    padding-top: 10px;
+    width: 90%;
 }
