@@ -25,6 +25,9 @@ import { RegistrationComponent } from './login/registration/registration.compone
     // CreatePrayRequestComponent,
     // OutScheduleComponent
   ],
+  entryComponents:[
+    RegistrationComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
