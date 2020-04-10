@@ -7,16 +7,18 @@ import { LeftSideBarComponent } from '../left-side-bar/left-side-bar.component'
 import { SharedModule } from '../shared/shared.module'
 import { CreatePrayRequestComponent } from '../work-content/create-pray-request/create-pray-request.component';
 import { OutScheduleComponent } from '../work-content/out-schedule/out-schedule.component';
+import { ParyBbsComponent } from '../work-content/pary-bbs/pary-bbs.component';
 
 const routes = [
   {
     path: '',
     component: HomeComponent,
     children: [
-      {path: '', redirectTo: '/list', pathMatch: 'full'},
-      {path: 'list', loadChildren: '../work-content/pray-list/pray-list.module#PrayListModule'},
+      {path: '', redirectTo: '/pray-list', pathMatch: 'full'},
+      {path: 'pray-list', loadChildren: '../work-content/pray-list/pray-list.module#PrayListModule'},
       {path: 'create-pray', component: CreatePrayRequestComponent},
-      {path: 'out-schedule', component: OutScheduleComponent}
+      {path: 'out-schedule', component: OutScheduleComponent},
+      {path: 'pray-bbs', component: ParyBbsComponent}
     ]
   }
 ];
@@ -31,7 +33,8 @@ const routes = [
       HomeComponent, 
       LeftSideBarComponent,
       CreatePrayRequestComponent,
-      OutScheduleComponent
+      OutScheduleComponent,
+      ParyBbsComponent
     ],
     exports: [
         CommonModule,
@@ -39,7 +42,8 @@ const routes = [
         HomeComponent,
         LeftSideBarComponent,
         CreatePrayRequestComponent,
-        OutScheduleComponent
+        OutScheduleComponent,
+        ParyBbsComponent
     ]
 })
 

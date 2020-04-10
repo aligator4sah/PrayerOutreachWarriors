@@ -16,12 +16,14 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './login/registration/registration.component';
+import { ParyBbsComponent } from './work-content/pary-bbs/pary-bbs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistrationComponent,
+    // ParyBbsComponent,
     // CreatePrayRequestComponent,
     // OutScheduleComponent
   ],
