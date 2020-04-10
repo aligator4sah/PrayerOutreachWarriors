@@ -22,7 +22,7 @@
           <mat-nav-list>
             <a mat-list-item [routerLink]="['/list']"> Prayer List </a>
             <a mat-list-item [routerLink]="['/create-pray']"> Create Prayer </a>
-            <a mat-list-item [routerLink]="['/list']"> Group Progress </a>
+            <a mat-list-item [routerLink]="['/list']"> Pray BBS </a>
           </mat-nav-list>
         </mat-expansion-panel>
       
@@ -46,7 +46,7 @@
         <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
             <mat-expansion-panel-header>
               <mat-panel-title>
-                Internal Prayer
+                Needs Request
               </mat-panel-title>
               <mat-panel-description>
                 <mat-icon>group</mat-icon>
@@ -54,9 +54,9 @@
             </mat-expansion-panel-header>
         
             <mat-list>
-              <mat-list-item>Calendar</mat-list-item>
-              <mat-list-item>Create Event</mat-list-item>
-              <mat-list-item>Find Event</mat-list-item>
+              <mat-list-item>Request View</mat-list-item>
+              <mat-list-item>Help View</mat-list-item>
+              <mat-list-item>Resources</mat-list-item>
             </mat-list>
           </mat-expansion-panel>
   </mat-accordion>      
