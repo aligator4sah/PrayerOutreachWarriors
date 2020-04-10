@@ -17,15 +17,13 @@ import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './login/registration/registration.component';
 import { ParyBbsComponent } from './work-content/pary-bbs/pary-bbs.component';
+import { NeedsRequestsComponent } from './work-content/needs-requests/needs-requests.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    // ParyBbsComponent,
-    // CreatePrayRequestComponent,
-    // OutScheduleComponent
   ],
   entryComponents:[
     RegistrationComponent
