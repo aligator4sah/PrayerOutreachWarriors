@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pary-bbs',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParyBbsComponent implements OnInit {
 
-  constructor() { }
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) { 
+    iconRegistry.addSvgIcon(
+      'like',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/heart.svg'));
+  }
 
   ngOnInit() {
   }
